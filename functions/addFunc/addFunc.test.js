@@ -11,17 +11,17 @@ describe('Test for addFunc function', () => {
     }).toThrow();
   });
 
-  test(`should throw an error if one of arguments is NaN`, () => {
+  test('should throw an error if one of arguments is NaN', () => {
     expect(() => {
       addFunc(10, NaN);
     }).toThrow();
   });
 
-  test(`should be correct if one of arguments is not`, () => {
+  test('should be correct if one of arguments is not', () => {
     expect(addFunc(10)).toBe(10);
   });
 
-  test(`should be zero without any arguments`, () => {
+  test('should be zero without any arguments', () => {
     expect(addFunc()).toBe(0);
   });
 });
